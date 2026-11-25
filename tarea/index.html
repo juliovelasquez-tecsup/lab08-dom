@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarea - Lista de tareas</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 640px; margin: 30px auto; }
+    li { margin-bottom: 8px; }
+    li.hecha span { text-decoration: line-through; color: #888; }
+    button { margin-left: 6px; }
+    .error { color: #c0392b; }
+  </style>
+</head>
+<body>
+  <h1>Mi lista de tareas</h1>
+
+  <form id="formulario">
+    <input id="texto" type="text" placeholder="Escribe una tarea">
+    <button type="submit">Agregar</button>
+  </form>
+  <p id="mensaje"></p>
+
+  <ul id="lista"></ul>
+  <p>Pendientes: <span id="pendientes">0</span></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
